@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190226 21:38:06.907" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="C:\Users\admin\PycharmProjects\Data Driven\Test" id="s1" name="Test">
+<suite source="C:\Users\admin\PycharmProjects\Data Driven\Test\Flywheel.robot" id="s1-s1" name="Flywheel">
+<kw type="setup" name="Browse Flywheel" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190226 21:38:07.056" level="INFO">Opening browser 'chrome' to base url 'https://construct.flywheelsports.com/login'.</msg>
+<status status="PASS" endtime="20190226 21:38:13.769" starttime="20190226 21:38:07.055"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190226 21:38:14.879" starttime="20190226 21:38:13.770"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>.5s</arg>
+</arguments>
+<status status="PASS" endtime="20190226 21:38:14.880" starttime="20190226 21:38:14.879"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:14.880" starttime="20190226 21:38:07.055"></status>
+</kw>
+<test id="s1-s1-t1" name="Login to Flywheel">
+<kw name="Set Email" library="Login Page">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20190226 21:38:14.882" level="INFO">Typing text 'alexhopper@battleship.com' into text field '//input[@id='form__field-username']'.</msg>
+<status status="PASS" endtime="20190226 21:38:16.866" starttime="20190226 21:38:14.881"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:16.866" starttime="20190226 21:38:14.881"></status>
+</kw>
+<kw name="Set Password" library="Login Page">
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20190226 21:38:16.867" level="INFO">Typing password into text field '//input[@id='form__field-password']'.</msg>
+<status status="PASS" endtime="20190226 21:38:18.521" starttime="20190226 21:38:16.867"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:18.521" starttime="20190226 21:38:16.866"></status>
+</kw>
+<kw name="Click Login Button" library="Login Page">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20190226 21:38:18.523" level="INFO">Clicking button '//*[@id="mount"]/div/div/div[2]/div/form/div[3]/button'.</msg>
+<status status="PASS" endtime="20190226 21:38:21.163" starttime="20190226 21:38:18.523"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:21.163" starttime="20190226 21:38:18.522"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:21.164" critical="yes" starttime="20190226 21:38:14.880"></status>
+</test>
+<kw type="teardown" name="Close Flywheel" library="Common">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190226 21:38:23.729" starttime="20190226 21:38:21.168"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:23.729" starttime="20190226 21:38:21.168"></status>
+</kw>
+<status status="PASS" endtime="20190226 21:38:23.730" starttime="20190226 21:38:06.935"></status>
+</suite>
+<status status="PASS" endtime="20190226 21:38:23.735" starttime="20190226 21:38:06.911"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+<stat fail="0" id="s1-s1" name="Flywheel" pass="1">Test.Flywheel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
